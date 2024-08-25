@@ -1,0 +1,253 @@
+/*general*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F2F5;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFB700;
+    color: #0F0F0F;
+    padding: 10px 20px;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    color: #0F0F0F;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header .icon-section {
+    display: flex;
+    align-items: center;
+}
+
+.header .icon {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.header .divider {
+    width: 3px;
+    height: 20px;
+    background-color: #0F0F0F;
+}
+
+/* Bienvenida */
+.bienvenida {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    padding: 60px;
+}
+
+.bienvenida img {
+    max-width: 600px;
+    border-radius: 100%;
+}
+
+.bienvenida .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bienvenida h1 {
+    margin: 0;
+    font-size: 56px;
+}
+
+.bienvenida p {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Main */
+main.categorias {
+    padding: 20px;
+    background-color: #F4F2F5;
+}
+
+.nuevos-modelos {
+    margin-bottom: 20px;
+}
+
+.nuevos-modelos h2 {
+    font-size: 24px;
+    color: #0F0F0F;
+}
+
+.sub-categorias h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #0F0F0F;
+}
+
+/* footer */
+
+.footer {
+    background-color: #0F0F0F;
+    color: #F4F2F5;
+    padding: 20px;
+}
+
+.footer .container, .footer .Subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer .column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer .column p {
+    margin: 10px 0;
+}
+
+.Subscribe {
+    flex: 1; 
+    text-align: start;
+}
+
+.Subscribe input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #F4F2F5;
+    border-radius: 4px;
+}
+
+.Subscribe input[type="button"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFB700;
+    color: #0F0F0F;
+    cursor: pointer;
+}
+
+.Subscribe input[type="button"]:hover {
+    background-color: #e0a700;
+}
+
+.copy-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #F4F2F5;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}
+
+/* aca estoy probando cosas del responsive*/
+
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .header nav ul li {
+        margin: 5px 0;
+    }
+
+    .bienvenida {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bienvenida img {
+        margin-top: 20px;
+        max-width: 80%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .column {
+        margin: 10px 0;
+    }
+
+    .Subscribe {
+        margin-top: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .bienvenida h1 {
+        font-size: 32px;
+    }
+
+    .bienvenida p {
+        font-size: 18px;
+    }
+
+    .nuevos-modelos h2 {
+        font-size: 20px;
+    }
+
+    .sub-categorias h3 {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .Subscribe input[type="email"],
+    .Subscribe input[type="button"] {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 5px 0;
+    }
+}

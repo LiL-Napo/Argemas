@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pago</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="shortcut icon" href="../assets/favicon.png">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">Argemas</div>
+            <div class="ayuda">
+                <a href="#help">Ayuda</a>
+            </div>
+        </header>
+
+        <main>
+            <h1>Datos personales</h1>
+            <div class="personal-info-form">
+                <h2>Ingrese sus datos personales</h2>
+                <form action="/submit" method="post">
+                    <div class="form-pay">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-pay">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="form-pay">
+                        <label for="dni">DNI:</label>
+                        <input type="text" id="dni" name="dni" required>
+                    </div>
+                    <div class="form-pay">
+                        <label for="celular">Celular:</label>
+                        <input type="tel" id="celular" name="celular" required>
+                    </div>
+                    <div class="form-pay">
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero" required>
+                            <option value="" disabled selected>Selecciona tu género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn validate-btn">Validar</button>
+                </form>
+            </div>
+        </main>
+
+        <article class="resumen-de-compra">
+            <h2>Resumen de compra</h2>
+            <div class="resumen-de-producto">
+                <h3>Nombre del producto</h3>
+                <p>1 (unidad)</p>
+                <p>$30.000</p>
+            </div>
+            <div class="cupon-tarjeta">
+                <a href="">Ingresa tu codigo de descuento</a>
+                <a href="">consulte promociones con su banco</a>
+            </div>
+            <div class="precio-final">
+                <p>subtotal $30.000</p>
+                <h3>Total $30.000</h3>
+            </div>
+        </article>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="column">
+                    <p>argemas</p>
+                </div>
+                <div class="column">
+                    <p>Explore</p> 
+                    <p>Models</p>
+                    <p>Out story</p>
+                    <p>Shop now</p>
+                    <p>Get in touch</p>
+                </div>
+                <div class="column">
+                    <p>Resources</p>
+                    <p>FAQS</p>
+                    <p>Care tips</p>
+                    <p>Blog</p>
+                    <p>Press</p>
+                </div>
+                <div class="column">
+                    <p>Company</p>
+                    <p>About us</p>
+                    <p>Carrers</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of service</p>
+                </div>
+            
+                <div class="Subscribe">
+                    <p>Subscribe</p>
+                    <p>Join our newsletter of updates and offers.</p>
+                    <input type="email">
+                    <input type="button" value="Subscribe">
+                    <p>By subscribing, you agree to our Privacy Policy and consent to receive updates.</p>
+                </div>
+            </div>
+            <div class="copy-social">
+                <p>&copy; 2024 Argemas. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    <a href="https://x.com" target="_blank">Twitter</a>
+                    <a href="https://www.youtube.com" target="_blank">Youtube</a>
+                </div>
+            </div>
+            
+        </footer>
+    </body>
+</html>
